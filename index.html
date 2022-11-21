@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+      rel="stylesheet"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +18,12 @@
     />
   </head>
   <body>
-    <header>
-      <a class="interactive-elements logo" href="#">Web<span>Studio</span></a>
+    <header class="header-box">
+      <a class="interactive-elements logo" href="#"
+        >Web<span class="header-logo-span">Studio</span></a
+      >
       <nav>
-        <ul>
+        <ul class="menu-box">
           <li>
             <a class="interactive-elements header-font menu" href="#"
               >Agencja</a
@@ -37,59 +43,67 @@
           </li>
         </ul>
       </nav>
-      <a
-        class="contact-information header-font header-contact"
-        href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a
-        class="contact-information header-font header-contact"
-        href="tel:+48111111111"
-        >+48 111 111 111</a
-      >
+      <div class="contact-box">
+        <a
+          class="contact-information header-font header-contact mail-box"
+          href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <a
+          class="contact-information header-font header-contact phone-box"
+          href="tel:+48111111111"
+          >+48 111 111 111</a
+        >
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section first-section">
         <h1 class="first-section-header">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          Efektywne rozwiązania<br />
+          dla waszego biznesu
         </h1>
         <button class="interactive-elements first-section-button" type="button">
           Zamów usługę
         </button>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="section second-section">
+        <ul class="second-section-box">
+          <li class="text-item">
             <h4 class="second-section-header">LOREM IPSUM</h4>
             <p class="second-section-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              arcu sem. Sed<br />
+              non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="text-item">
             <h4 class="second-section-header">LOREM IPSUM</h4>
             <p class="second-section-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              arcu sem. Sed<br />
+              non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="text-item">
             <h4 class="second-section-header">LOREM IPSUM</h4>
             <p class="second-section-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              arcu sem. Sed <br />non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="text-item">
             <h4 class="second-section-header">LOREM IPSUM</h4>
             <p class="second-section-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              arcu sem. Sed<br />
+              non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
+      </section>
+      <section class="section">
         <h2 class="third-section-header">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="third-section-items">
           <li>
             <img
               src="./images/img1.jpg"
@@ -116,10 +130,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section fourth-section">
         <h2 class="fourth-section-header">Nasz zespół</h2>
-        <ul>
-          <li>
+        <ul class="fourth-section-items">
+          <li class="workers-list-item">
             <figure>
               <img
                 src="./images/img4.jpg"
@@ -133,7 +147,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="workers-list-item">
             <figure>
               <img
                 src="./images/img5.jpg"
@@ -147,7 +161,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="workers-list-item">
             <figure>
               <img
                 src="./images/img6.jpg"
@@ -161,7 +175,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="workers-list-item">
             <figure>
               <img
                 src="./images/img7.jpg"
@@ -178,9 +192,11 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a class="interactive-elements logo" href="#">Web<span>Studio</span></a>
-      <address class="footer-adress">
+    <footer class="container">
+      <a class="interactive-elements logo footer-logo" href="#"
+        >Web<span class="footer-logo-span">Studio</span></a
+      >
+      <address class="footer-adress footer-box">
         m. Warszawa, Aleje Jerozolimskie 21
         <div>
           <a
